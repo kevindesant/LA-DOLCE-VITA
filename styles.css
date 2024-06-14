@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@500&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+}
+
+.form-container {
+    text-align: center;
+    z-index: 1;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Make line transparent */
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 0; /* Remove margin to align with button */
+}
+
+.input-group input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Make placeholder text transparent */
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Make button background transparent */
+    color: #fff; /* Make button text white */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500; /* Use medium weight */
+    font-family: 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.input-group button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly less transparent on hover */
+}
+
+.waitlist {
+    font-size: 1.2em;
+    margin: 10px 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5); /* Make box background transparent */
+    color: #fff; /* Make box text white */
+    padding: 10px 20px; /* Reduce padding for a shorter box */
+    display: inline-block;
+    font-weight: 500;
+}
+
+.waitlist:hover {
+    background: rgba(255, 255, 255, 0.7); /* Slightly less transparent on hover */
+}
+
+.note {
+    font-size: 0.8em;
+    font-family: Arial, sans-serif; /* Use a different font for the note */
+    font-weight: 400; /* Use regular weight */
+    color: #fff; /* Make note text white */
+}
